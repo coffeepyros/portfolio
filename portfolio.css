@@ -1,0 +1,318 @@
+/* Personal portfolio, imagine yourself as an established
+developer. (more in story.txt)
+
+SITE STRUCTURE
+
+#header
+
+#about-me
+    .what-i-do
+    .portrait
+    .philosophy
+
+#projects
+    .project-1
+    .project-2
+    .project-3
+
+#contact
+    .address
+    .google-maps
+    .call-to-action
+    .contact-info
+    .social-media
+    .pdf-portfolio
+
+#footer
+
+COLORS
+taken from https://color.adobe.com/create
+
+Light Green         #4CCC14     hsl(102,82%,44%)
+Desaturated Green   #59993D
+Yellow              #FFFF00     hsl(60,100%,50%)
+Light Blue          #6940FF     hsl(253,100%,63%)
+Saturated Blue      #141ECC
+
+*/
+
+/* Mobile first design */
+* {
+  margin: 0;
+}
+body {
+  background-color: #ccc;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Overwriting Mobile Layout for Desktop View */
+@media (min-width: 960px) {
+  .grid {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+#header {
+  /* background-color: #fff; */
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+@media (min-width: 960px) {
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.name {
+  font-size: 2rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  /* text-transform: uppercase; */
+  margin: 0;
+  padding: 1rem;
+}
+
+.navigation {
+  padding-left: 1rem;
+  text-align: right;
+  margin: 0;
+}
+
+.navigation a {
+  font-size: 1.2rem;
+  font-family: "Spartan", sans-serif;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0.6rem 0.5rem 0.4rem 0.5rem;
+  border: 4px solid #000;
+}
+
+@media (max-width: 576px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .link-about-me,
+  .link-projects,
+  .link-blog {
+    border-bottom: 0;
+  }
+}
+
+.link-about-me {
+  background-color: #ff0;
+}
+.link-projects {
+  background-color: #4ccc14;
+}
+.link-contact {
+  background-color: #7986cb;
+}
+.link-blog {
+  background-color: #9e9e9e;
+}
+.navigation a:hover {
+  background-color: #000;
+  color: #fff;
+}
+#about-me {
+  background-color: #fff;
+  border-top: 5px solid hsl(60, 100%, 50%);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px) {
+  #about-me {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "what-i-do portrait philosophy";
+  }
+}
+
+.portrait {
+  width: 160px;
+  height: 160px;
+}
+
+.what-i-do {
+  margin: 0;
+  padding: 1rem;
+}
+.what-i-do-first {
+  margin-bottom: 0.5rem;
+}
+.what-i-do mark {
+  padding: 0.25rem 0.5rem;
+}
+.meet {
+  font-weight: bold;
+  color: #141ecc;
+  text-decoration: underline;
+}
+.philosophy {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+#projects {
+  margin-top: 1rem;
+}
+.project {
+  margin-bottom: 0.5rem;
+  border-top: 6px solid #000;
+  background-color: #fff;
+  /* background-color: hsl(102, 82%, 44%); */
+  /* border-bottom: 5px solid hsl(102, 82%, 44%); */
+}
+@media (min-width: 960px) {
+  .project {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0.5rem;
+  }
+}
+
+#projects p {
+  padding: 1rem;
+  color: #333;
+}
+
+.mockup {
+  width: 100%;
+}
+
+.img-client {
+  width: 180px;
+}
+#contact {
+  /* margin-top: 0.5rem; */
+  background-color: #7986cb;
+}
+
+@media (min-width: 960px) {
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "address call-to-action social-media"
+      "google-maps contact-info pdf-portfolio";
+  }
+  .address {
+    grid-area: address;
+  }
+  .call-to-action {
+    grid-area: call-to-action;
+  }
+  .social-media {
+    grid-area: social-media;
+  }
+  .google-maps {
+    grid-area: google-maps;
+  }
+  .contact-info {
+    grid-area: contact-info;
+  }
+  .pdf-portfolio {
+    grid-area: pdf-portfolio;
+  }
+}
+
+.address,
+.google-maps,
+.call-to-action,
+.contact-info,
+.social-media,
+.pdf-portfolio {
+  padding: 1rem;
+}
+.address p {
+  margin-top: 1rem;
+}
+.contact-button-wrap {
+  margin: 1rem 0 1.5rem 0;
+}
+
+.contact-link,
+.contact-info em {
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+  font-weight: 500;
+}
+.contact-info em {
+  font-style: normal;
+}
+
+.contact-link:hover {
+  color: #000;
+}
+
+.contact-button {
+  background-color: #fff;
+  color: #7986cb;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+#contact h3 {
+  margin-bottom: 1rem;
+}
+
+#contact hr {
+  border-color: #7986cb;
+  margin-bottom: 1rem;
+}
+.social-media-icons {
+  margin-bottom: 1rem;
+}
+
+.social-media-icons img {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.25rem;
+}
+
+#footer {
+  margin-top: 0.5rem;
+  background-color: #484848;
+  display: grid;
+  grid-template-rows: 2.5rem;
+  justify-items: center;
+  align-items: center;
+  color: #777;
+}
+#footer a {
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}

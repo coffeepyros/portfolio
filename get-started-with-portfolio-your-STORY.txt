@@ -1,0 +1,40 @@
+
+Who am I? e.g.
+	- a recruiter
+	- an HR employeer
+	- chef of a medium sized IT company
+	- Owner of a local shop
+	- …
+
+What do I want? / What am I looking for? e.g.
+	- I want to hire a developper for my IT Company
+	- I want that somebody build a website for my local shop, so that my customers can easily find me
+	- I want to add an online shop to my local shop
+	- I search for talented developer to recommend them to  my clients (as a recruiter)
+
+How do I get to the website?
+	- I find you on google when searching for "website developper leipzig"
+	- I got an email from you with the link to the website (TODO: content of the email?)
+	- I met you at an event and now visit the website of your business card
+	- I have seen your website on your application and visit it to check your skills
+
+What should I do in the end when visitting your website? / What should I feel?
+	- I should write you an e-mail with the request to make an offer for me.
+	- I should contact you to ask if youn want whatever
+	- I should feel confident that you are a good employee for my company
+	- …
+
+Put all together:
+What is the STORY of me, until I contact you
+	- I am a recruiter
+	- I come to your website because you send me an email 
+		○ in the email I asked you to put me inside theyr developper pool to contact me for some projects
+		○ int his mail I added the link to my homepage
+	- I visitted your homepage, where you presented your it-skills, I read your skills and found that they would fit well with some projects.
+	- Now I would like to convince myself of the quality of your work, I found in the header-section a link to previous projects
+	- I clicked on 2 projects, where I read 2 lines of the description and looked through the images of this project
+	- The quality of the projects looks good: I want to check if this is really your work: I'm looking for contact details of the company you did the project with.
+	- I find below the images of your project a testimonial fromthe client which says "Working with Pascal Jankowicz was a pleasure, he over-delivered just in time!" with the image of the CEO of the company and the contact details to the company
+	- I do not contact the company, cause the testimonial convinced me
+	- I feel now convinced that you are a good developper and I want to introduce your profile to some of my clients for some projects
+So I reply to your E-Mail and asking for an appointment
