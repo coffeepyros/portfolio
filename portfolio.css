@@ -86,6 +86,11 @@ a {
   padding: 1rem;
 }
 
+.name a,
+.name a:visited {
+  color: #000;
+}
+
 .navigation {
   padding-left: 1rem;
   text-align: right;
@@ -168,7 +173,7 @@ a {
 .meet {
   font-weight: bold;
   color: #141ecc;
-  text-decoration: underline;
+  border-bottom: 2px solid #141ecc;
 }
 .philosophy {
   padding: 1rem;
